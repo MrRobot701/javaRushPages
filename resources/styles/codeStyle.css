@@ -1,0 +1,109 @@
+.code-heading {
+    line-height: 1.7;
+    display: inline-block;
+    padding: .3em 1em .5em;
+    font-family: Menlo, Monaco, Consolas, Courier New, Ubuntu Mono, monospace;
+    font-weight: 600;
+    border-radius: .2rem .2rem 0 0;
+    font-size: .8em;
+    background-color: #fcf0ff;
+    border: .02em solid #b58ec1;
+    border-bottom: none;
+}
+
+pre {
+    font-family: Menlo,Monaco,Consolas,Courier New,Ubuntu Mono,monospace;
+    max-width: 100%;
+}
+
+code {
+    overflow: auto;
+}
+
+.line-numbers {
+    border: .02em solid #b58ec1;
+    border-radius: 0 .2rem .2rem .2rem;
+    overflow: hidden;
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.line-numbers-rows {
+    background-color: #fff0d5;
+    border-right: solid .02rem #b58ec1;
+    padding: .5em .8em .5em 2em;
+    line-height: 1.7em;
+}
+
+.line-numbers-rows > span {
+    counter-increment: linenumber;
+    display: block;
+}
+
+.line-numbers-rows > span:before {
+    content: counter(linenumber);
+    color: #55565a;
+}
+
+.language-java {
+    margin: .5em;
+    line-height: 1.7em;
+}
+
+.function {
+    color: #900606;
+}
+
+.string {
+    color: green;
+}
+
+.keyword {
+    color: navy;
+    font-weight: 600;
+}
+
+.bl {
+    display: inline-block;
+    background-color: transparent;
+    border: 1px dashed  #f80;
+    text-transform: uppercase;
+    margin-left: 1.7em;
+    padding: 0 2em;
+}
+
+.ps mark.bl {
+    padding: 3em 2em;
+}
+
+pre.lecture-code {
+    border: .02em solid #b58ec1;
+    border-radius: .2rem;
+}
+
+pre.lecture-code code {
+    padding: .2em .4em;
+}
+
+pre.inline-block {
+    display: inline-flex;
+}
+
+.text-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.variable, .method {
+    margin-bottom: 1em;
+}
+
+.method {
+    padding: 2em 3.4em;
+}
+
+.method:nth-last-child(2) {
+    margin-bottom: 0;
+}

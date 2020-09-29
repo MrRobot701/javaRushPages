@@ -21,9 +21,14 @@ footer {
 
 img {
     max-width: 100%;
+    min-width: 50%;
 }
 
-footer a { 
+a:only-child {
+    margin: auto;
+}
+
+footer a {
     color: #4180ab;
     background: white;
     border: solid #4180ab .12em;
@@ -39,4 +44,120 @@ footer a:hover {
 
 .col {
     text-align: center;
+}
+
+.avatar {
+    margin: 0 1em 0 0;
+}
+
+.risha {
+    background-image: url(../img/avatars/risha.png);
+}
+
+.zapp {
+    background-image: url(../img/avatars/zapp.png);
+}
+
+.avatar_image {
+    position: relative;
+    width: 6em;
+    height: 6em;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+#teachers_name {
+    color: white;
+    background-color: #40ab47;
+    padding: 0.5em 1em;
+    border-radius: 0.2em;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.flexContainer {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.flexContainerColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.flexContainerColumn>p {
+    margin: 0;
+}
+
+.article-head_title {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.status {
+    margin: 0.5em 0;
+}
+
+.flexContainerColumn p {
+    color: #7a869a;
+    font-size: 0.7em;
+    margin: 0.2em 0;
+    line-height: 1em;
+}
+
+.normalFlow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+blockquote {
+    overflow-wrap: break-word;
+    margin: 0 0 1rem;
+    line-height: 1.5;
+    text-align: right;
+    font-size: 1em;
+    font-weight: 400;
+    font-style: italic;
+    color: #871dc1;
+    text-shadow: none;
+    margin-left: auto;
+}
+
+blockquote footer {
+    display: block;
+    padding-bottom: 5px;
+    line-height: 1.2;
+    font-size: .95em;
+    font-weight: 600;
+    font-style: normal;
+    color: rgba(23, 43, 83, .9);
+}
+
+blockquote footer small {
+    font-size: 80%;
+    opacity: .85;
+}
+
+.text-user {
+    color: #0041ba;
+}
+
+.text-green {
+    color:green;
+}
+.text-yellow {
+    color:#735205;
+}
+.text-viola {
+    color: #871dc1;
+}
+.text-red {
+    color: red;
 }

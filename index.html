@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>First page</title>
     <link href="resources/styles/style.css" rel="stylesheet" type="text/css">
+    <link href="resources/styles/codeStyle.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -12,9 +13,21 @@
 
     <main>
         <article>
+            <header id="headerContainer" class="flexContainer">
+                <figure id="avatar" class="avatar">
+                    <div role="img" class="avatar_image zapp"></div>
+                </figure>
+                <div id="headerInnerContainer" class="flexContainerColumn">
+                    <h1 class="article-head_title">Обучение программированию на Java | Уроки с нуля</h1>
+                    <p>Java Syntax</p>
+                    <p>0 уровень, 0 лекция</p>
+                    <p id="teachers_name">Капитан Zapp</p>
+                </div>
+            </header>
+            
+            <h2>Предыстория</h2>
             <div class="row">
-                <div class="col"><img alt="Обучение программированию на Java"
-                        src="resources/img/spacecraft.png">
+                <div class="col"><img alt="Обучение программированию на Java" src="resources/img/spacecraft.png">
                 </div>
             </div>
             <p>Команда Galactic Rush потерпела крушение на неизвестной планете. При падении корабль врезался в гору и
@@ -37,8 +50,8 @@
                 для
                 загрузки прошивки. У них вообще не было никакого разъёма для перепрошивки!</p>
             <div class="row">
-                <div class="col"><img alt="Обучение программированию на Java"
-                        src="resources/img/alianAndRobot.png"></div>
+                <div class="col"><img alt="Обучение программированию на Java" src="resources/img/alianAndRobot.png">
+                </div>
             </div>
             <p>— Билаабо, единственный инопланетянин в составе экипажа, вспомнил, что когда-то на своей родной планете
                 видел
@@ -51,8 +64,7 @@
                 Умея
                 программировать, он смог бы написать себе любую прошивку и помочь нам!</p>
             <div class="row">
-                <div class="col"><img alt="Обучение программированию на Java"
-                        src="resources/img/robotAndJew.png">
+                <div class="col"><img alt="Обучение программированию на Java" src="resources/img/robotAndJew.png">
                 </div>
             </div>
             <p>В общем, мы поймали один сообразительный экземпляр. Диего предложил назвать его Амиго, в честь своего
@@ -62,8 +74,7 @@
                 работу по
                 устранению завала. Дикарям и этого много, ведь мы бесплатно занимаемся их просвещением.</p>
             <div class="row">
-                <div class="col"><img alt="Обучение программированию на Java"
-                        src="resources/img/team.png">
+                <div class="col"><img alt="Обучение программированию на Java" src="resources/img/team.png">
                 </div>
             </div>
             <p>Диего потом напишет в своих мемуарах:</p>
@@ -87,9 +98,43 @@
     </main>
 
     <footer>
-        <a href="">Предыдущая лекция</a>
-        <a href="">Следующая лекция</a>
+        <a href="2.html">Следующая лекция</a>
     </footer>
+    <script type="text/javascript">
+        let maxScrollWidth;
+        window.addEventListener("resize", resizeHeader);
+        window.addEventListener("load", resizeHeader);
+
+        function resizeHeader() {
+            let headerContainer = document.getElementById("headerContainer");
+            let columnContainer = document.getElementById("headerInnerContainer");
+            let avatar = document.getElementById("avatar");
+
+            if (!maxScrollWidth) {
+                maxScrollWidth = headerContainer.scrollWidth;
+            }
+
+            if (headerContainer.classList.contains("normalFlow")) {
+                if (maxScrollWidth <= headerContainer.clientWidth) {
+                    changeHeaderDisplay(["normalFlow"], ["flexContainer"], [headerContainer, columnContainer]);
+                    avatar.classList.add("avatar");
+                }
+            } else if (maxScrollWidth > headerContainer.clientWidth) {
+                changeHeaderDisplay(["flexContainer"], ["normalFlow"], [headerContainer, columnContainer]);
+                avatar.classList.remove("avatar");
+            }
+        }
+        function changeHeaderDisplay(classesToRemove, classesToAdd, elements) {
+            for (let element of elements) {
+                for (let classToRemove of classesToRemove) {
+                    element.classList.remove(classToRemove);
+                }
+                for (let classToAdd of classesToAdd) {
+                    element.classList.add(classToAdd);
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>
