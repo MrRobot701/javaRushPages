@@ -15,7 +15,7 @@
     <main>
         <article>
             <header id="headerContainer" class="flexContainer">
-                <figure class="avatar">
+                <figure id="avatar" class="avatar">
                     <div role="img" class="avatar_image risha"></div>
                 </figure>
                 <div id="headerInnerContainer" class="flexContainerColumn">
@@ -279,41 +279,7 @@ System.out.<span class="token function">println</span>(<span class="token string
         <a href="2.html">Следующая лекция</a>
     </footer>
 
-    <script type="text/javascript">
-        let maxScrollWidth;
-        window.addEventListener("resize", resizeHeader);
-        window.addEventListener("load", resizeHeader);
-
-        function resizeHeader() {
-            let headerContainer = document.getElementById("headerContainer");
-            let columnContainer = document.getElementById("headerInnerContainer");
-            let avatar = document.getElementById("avatar");
-
-            if (!maxScrollWidth) {
-                maxScrollWidth = headerContainer.scrollWidth;
-            }
-
-            if (headerContainer.classList.contains("normalFlow")) {
-                if (maxScrollWidth <= headerContainer.clientWidth) {
-                    changeHeaderDisplay(["normalFlow"], ["flexContainer"], [headerContainer, columnContainer]);
-                    avatar.classList.add("avatar");
-                }
-            } else if (maxScrollWidth > headerContainer.clientWidth) {
-                changeHeaderDisplay(["flexContainer"], ["normalFlow"], [headerContainer, columnContainer]);
-                avatar.classList.remove("avatar");
-            }
-        }
-        function changeHeaderDisplay(classesToRemove, classesToAdd, elements) {
-            for (let element of elements) {
-                for (let classToRemove of classesToRemove) {
-                    element.classList.remove(classToRemove);
-                }
-                for (let classToAdd of classesToAdd) {
-                    element.classList.add(classToAdd);
-                }
-            }
-        }
-    </script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>

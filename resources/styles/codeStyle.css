@@ -1,8 +1,12 @@
+:root {
+    --font-for-code: Menlo, Monaco, Consolas, Courier New, Ubuntu Mono, monospace;
+    --em-05: .5em;
+}
+
 .code-heading {
     line-height: 1.7;
     display: inline-block;
     padding: .3em 1em .5em;
-    font-family: Menlo, Monaco, Consolas, Courier New, Ubuntu Mono, monospace;
     font-weight: 600;
     border-radius: .2rem .2rem 0 0;
     font-size: .8em;
@@ -12,7 +16,7 @@
 }
 
 pre {
-    font-family: Menlo,Monaco,Consolas,Courier New,Ubuntu Mono,monospace;
+    font-family: var(--font-for-code);
     max-width: 100%;
 }
 
@@ -32,7 +36,7 @@ code {
 .line-numbers-rows {
     background-color: #fff0d5;
     border-right: solid .02rem #b58ec1;
-    padding: .5em .8em .5em 2em;
+    padding: var(--em-05) .8em var(--em-05) 2em;
     line-height: 1.7em;
 }
 
@@ -47,7 +51,7 @@ code {
 }
 
 .language-java {
-    margin: .5em;
+    margin: var(--em-05);
     line-height: 1.7em;
 }
 

@@ -101,41 +101,7 @@
     <footer>
         <a href="2.html">Следующая лекция</a>
     </footer>
-    <script type="text/javascript">
-        let maxScrollWidth;
-        window.addEventListener("resize", resizeHeader);
-        window.addEventListener("load", resizeHeader);
-
-        function resizeHeader() {
-            let headerContainer = document.getElementById("headerContainer");
-            let columnContainer = document.getElementById("headerInnerContainer");
-            let avatar = document.getElementById("avatar");
-
-            if (!maxScrollWidth) {
-                maxScrollWidth = headerContainer.scrollWidth;
-            }
-
-            if (headerContainer.classList.contains("normalFlow")) {
-                if (maxScrollWidth <= headerContainer.clientWidth) {
-                    changeHeaderDisplay(["normalFlow"], ["flexContainer"], [headerContainer, columnContainer]);
-                    avatar.classList.add("avatar");
-                }
-            } else if (maxScrollWidth > headerContainer.clientWidth) {
-                changeHeaderDisplay(["flexContainer"], ["normalFlow"], [headerContainer, columnContainer]);
-                avatar.classList.remove("avatar");
-            }
-        }
-        function changeHeaderDisplay(classesToRemove, classesToAdd, elements) {
-            for (let element of elements) {
-                for (let classToRemove of classesToRemove) {
-                    element.classList.remove(classToRemove);
-                }
-                for (let classToAdd of classesToAdd) {
-                    element.classList.add(classToAdd);
-                }
-            }
-        }
-    </script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
