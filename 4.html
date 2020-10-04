@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Second Page</title>
+    <link rel="shortcut icon" type="image/x-icon" href="resources/img/icon/favicon.ico">
+    <link href="resources/styles/style.css" rel="stylesheet" type="text/css">
+    <link href="resources/styles/codeStyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+        <article>
+            <header id="headerContainer" class="flexContainer">
+                <figure id="avatar" class="avatar">
+                    <div role="img" class="avatar_image elly"></div>
+                </figure>
+                <div id="headerInnerContainer" class="flexContainerColumn">
+                    <h1 class="article-head_title">Элли, переменные и их типы</h1>
+                    <p>Java Syntax</p>
+                    <p>0 уровень, 4 лекция</p>
+                    <p id="teachers_name">Элли</p>
+                </div>
+            </header>
+            <div class="row">
+                <div class="col">
+                    <img alt="Элли, переменные и их типы - 1" src="resources/img/lesson4/elly.png">
+                </div>
+            </div>
+            <p>В каюту вошла шикарная женщина с розовыми волосами. «Интересно, неужели все человеческие женщины с такими волосами?»
+                — успел подумать Амиго, но быстро смутился под ее взглядом.</p>
+            <p>— Привет! Меня зовут Эллеонора Керри, можно просто Элли. Я штурман корабля «Galactic Rush».</p>
+            <p><span class="text-user">— Привет, Элли! – смущенно выдавил из себя Амиго. Он не знал почему, но чувствовал, что его
+                    щеки горят, как будто пробило маслопровод где-то внутри.</span></p>
+            <p>— Я расскажу тебе о самом интересном, что есть в языке Java – о переменных.</p>
+            <p><span class="text-user">— Я готов слушать. А что такое эти переменные?</span></p>
+            <p><span class="text-green">— Переменные – это специальная штука для хранения данных.</span> Любых данных. Все данные в
+                Java хранятся с помощью переменных. Больше всего переменная по смыслу напоминает коробку.</p>
+            <p><span class="text-user">— Какую коробку?</span></p>
+            <p>— Да обычную. Вот, допустим, что ты написал на листке число 13 и положил этот лист в коробку, теперь мы можем
+                говорить, что «коробка хранит значение 13».</p>
+            <p>— Каждая переменная в Java имеет три важных свойства: <span class="text-yellow">тип</span>, <span
+                    class="text-green">имя</span> и <span class="text-viola">значение</span>.</p>
+            <p><span class="text-user">— А можно поподробнее?</span></p>
+            <p>— Конечно. <span class="text-green">Имя используется для того, чтобы отличать одну переменную от другой. Это как
+                    надпись на коробке.</span></p>
+            <p><span class="text-yellow">— Тип переменной определяет тип значений/данных, которые в ней можно хранить.</span> В
+                коробке для торта храним торт, в коробке для обуви – туфли, и т.д.</p>
+            <p><span class="text-viola">— Значение – это некий объект, данные или информация, которая хранится в переменной.</span>
+            </p>
+            <p><span class="text-user">— А можно про тип еще раз?</span></p>
+            <p>— Ок. Каждый объект в языке Java имеет свой тип. Например, могут быть такие типы данных: «целое число», «дробное
+                число», «текст», «тип Кот», «тип Дом» и т.д.</p>
+            <p><span class="text-red">— У переменной тоже есть свой тип. Переменная может хранить значения только того же типа, что
+                    и она сама.</span></p>
+            <p>— В реальной жизни это часто встречается. Разные коробки используются для хранения различных вещей:</p>
+            
+            <div class="row">
+                <div class="col">
+                    <img alt="Элли, переменные и их типы - 2" src="resources/img/lesson4/boxes.jpeg"></a>
+                </div>
+            </div>
+            
+            <p>— Чтобы создать переменную используется команда вида: «<code class=" language-undefined">тип имя</code>».</p>
+            <p>Примеры:</p>
+            <div class="table-container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th width="20px"></th>
+                            <th>Создание переменной:<br>
+                                сначала тип, затем имя.</th>
+                            <th>Описание</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <pre class="line-numbers block-inline language-java" data-line="" data-start=""
+                                    style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span></span><code class="language-java ps"><span class="token keyword"></span><mark class="red"><span class="token keyword">int</span> a</mark><span class="token punctuation">;</span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+                            </td>
+                            <td>Создаем переменную по имени&nbsp;<mark class="red">a</mark>&nbsp;типа&nbsp;<mark
+                                    class="red">int</mark>.</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <pre class="line-numbers block-inline language-java" data-line="" data-start=""
+                                    style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span></span><code class="language-java ps"><mark class="green">String s</mark><span class="token punctuation">;</span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+                            </td>
+                            <td>Создаем переменную по имени&nbsp;<mark class="green">s</mark>&nbsp;типа&nbsp;<mark
+                                    class="green">String</mark>.</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <pre class="line-numbers block-inline language-java" data-line="" data-start=""
+                                    style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span></span><code class="language-java ps"><span class="token keyword"></span><mark class="viola"><span class="token keyword">double</span> c</mark><span class="token punctuation">;</span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+                            </td>
+                            <td>Создаем переменную по имени&nbsp;<mark class="viola">c</mark>&nbsp;типа&nbsp;<mark
+                                    class="viola">double</mark>.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>— Два самых часто используемых типа – это целые числа (обозначается словом <mark class="red">int</mark>) и текст
+                (обозначается словом <mark class="green">String</mark>).</p>
+            <p><span class="text-user">— А тип double?</span></p>
+            <p>— <strong>double</strong> – это дробные (вещественные) числа.</p>
+            <p><span class="text-user">— Ты говорила, что у переменной три свойства: тип, имя и значение. А тут только два. У меня
+                    вопрос — а как занести значение в переменную?</span></p>
+            <p>— Если вернуться к аналогии с коробками, то представь, что ты взял листик, написал на нем число 42 и положил в
+                коробку. Теперь коробка хранит значение 42.</p>
+            <p><span class="text-user">— Ясно.</span></p>
+            <p>— Для занесения значения в переменную существует специальная операция – <strong>операция присваивания</strong>. Она
+                <span class="text-green">копирует значение из одной переменной в другую</span>. Не переносит, а именно копирует. Как
+                файл на диске. Выглядит это так:</p>
+            <div _ngcontent-jr-site-c178="" class="table-container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th width="20px"></th>
+                            <th>Код</th>
+                            <th>Описание</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <pre class="line-numbers block-inline language-java" data-line="" data-start=""
+                                    style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span></span><code class="language-java ps"><mark class="green">i</mark> <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+                            </td>
+                            <td>В переменную <mark class="green">i</mark> заносится значение 3.</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <pre class="line-numbers block-inline language-java" data-line="" data-start=""
+                                    style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span><code class="language-java ps"><mark class="green">a</mark> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<mark class="viola">b</mark> <span class="token operator">=</span> <mark class="green">a</mark><span class="token operator"> +</span><span class="token number"> 1</span><span class="token punctuation">;</span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+                            </td>
+                            <td>В переменную <mark class="green">a</mark> заносится значение 1.<br>
+                                В переменную <mark class="viola">b</mark> заносится значение 2.</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <pre class="line-numbers block-inline language-java" data-line="" data-start=""
+                                    style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span><code class="language-java ps"><mark>x</mark> <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+<mark>x</mark> <span class="token operator">=</span> <mark>x</mark> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+                            </td>
+                            <td>В переменную <mark>x</mark> заносится значение 3.<br>
+                                В следующей строчке значение x увеличивается на 1, <mark>x</mark> теперь равен 4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>— Для операции присваивания используется <strong>символ равно</strong> «<strong>=</strong>».</p>
+            <p>— Еще раз. <strong>Это не сравнивание</strong>. Это именно <span class="text-red">копирование значения справа от
+                    знака</span> равно в переменную, которая слева. Для сравнения в языке Java используется двойное равно «==».</p>
+            <p><span class="text-user">— А я знаю, как положить в переменную кота. Это почти как программа.</span></p>
+            <p><span class="text-user">— Как поймать кота:</span></p>
+            <p><span class="text-user">1 Возьмите пустую коробку.</span></p>
+            <p><span class="text-user">2 Ждите.</span></p>
+            
+            <div class="row">
+                <div class="col">
+                    <img alt="Элли, переменные и их типы - 3" src="resources/img/lesson4/cats.jpeg">
+                </div>
+            </div>
+            
+            <p>— Нет, Амиго, в коробку можно запихнуть только одного кота. Тьфу! <span class="text-green">В переменную можно
+                    положить только одно значение.</span></p>
+            <p><span class="text-user">— Ясно. А можно еще примеров, как создать переменные?</span></p>
+            <p>— ОК, повторюсь. Чтобы создать переменную, нужно написать такую команду «<code
+                    class=" language-undefined">тип имя</code>»</p>
+            <div _ngcontent-jr-site-c178="" class="table-container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th width="20px"></th>
+                            <th>Код</th>
+                            <th>Пояснение</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <pre class="line-numbers block-inline language-java" data-line="" data-start=""
+                                    style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span></span><code class="language-java ps">String <mark class="red">s</mark><span class="token punctuation">;</span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+                            </td>
+                            <td>Создается переменная <mark class="red">s</mark> типа <code
+                                    class=" language-undefined">String</code>.<br>
+                                Такая переменная может хранить тексты.</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <pre class="line-numbers block-inline language-java" data-line="" data-start=""
+                                    style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span></span><code class="language-java ps"><span class="token keyword">int</span> <mark>x</mark><span class="token punctuation">;</span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+                            </td>
+                            <td>Создается переменная <mark>x</mark> типа <code class=" language-undefined">int</code>.<br>
+                                Такая переменная может хранить в себе целые числа.</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <pre class="line-numbers block-inline language-java" data-line="" data-start=""
+                                    style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span><code class="language-java ps"><span class="token keyword">int</span> <mark class="viola">a</mark><span class="token punctuation">,</span> <mark class="user">b</mark><span class="token punctuation">,</span> <mark class="green">c</mark><span class="token punctuation">;</span>
+<span class="token keyword">int</span> <mark>d</mark><span class="token punctuation">;</span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+                            </td>
+                            <td>Создаются переменные <mark class="viola">a</mark>, <mark class="user">b</mark>, <mark
+                                    class="green">c</mark>, <mark>d</mark> типа <code class=" language-undefined">int</code>.<br>
+                                Такие переменные могут хранить целые числа</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><span class="text-user">— О, теперь все понятно.</span></p>
+            <p>— Учти, что нельзя создать две переменных с одинаковыми именами в одном методе.</p>
+            <p><span class="text-user">— А в разных методах?</span></p>
+            <p>— В разных методах – можно. Это как коробки стоящие в разных домах.</p>
+            <p><span class="text-user">— А имя переменной может быть любым?</span></p>
+            <p>— Почти, но оно <span class="text-red">не может содержать пробелов, символов +,- и т.д.</span> Лучше всего в имени
+                переменной использовать <span class="text-green">только латинские символы и цифры</span>.</p>
+            <p>— Обрати внимание, что <strong>в языке Java играет роль, какие буквы ты напишешь – большие или маленькие</strong>.
+                <span class="text-yellow">«int a» – это не то же самое, что и «Int a»</span> .</p>
+            <p>— Кстати, в Java можно одновременно создавать переменную и присваивать ей значение. Это экономит время и место:</p>
+            <div _ngcontent-jr-site-c178="" class="table-container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th width="20px"></th>
+                            <th>Компактный код</th>
+                            <th>Длинный код, эквивалентный коду слева</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <pre class="line-numbers block-inline language-java" data-line="" data-start=""
+                                    style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span><code class="language-java ps"><span class="token keyword"></span><span class="text-green"><span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span></span><span class="token punctuation"></span>
+<span class="token keyword"></span><span class="text-user"><span class="token keyword">int</span> b <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">;</span></span><span class="token punctuation"></span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+                            </td>
+                            <td>
+                                <pre class="line-numbers block-inline language-java" data-line="" data-start=""
+                                    style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span><code class="language-java ps"><span class="token keyword"></span><span class="text-green"><span class="token keyword">int</span> a<span class="token punctuation">;</span>
+a <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span></span><span class="token punctuation"></span>
+<span class="token keyword"></span><span class="text-user"><span class="token keyword">int</span> b<span class="token punctuation">;</span>
+b <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">;</span></span><span class="token punctuation"></span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <pre class="line-numbers block-inline language-java" data-line="" data-start=""
+                                    style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span><code class="language-java ps"><span class="token keyword"></span><span class="text-red"><span class="token keyword">int</span> c <span class="token operator">=</span> <span class="token number">7</span><span class="token punctuation">;</span></span><span class="token punctuation"></span>
+<span class="token keyword"></span><span class="text-viola"><span class="token keyword">int</span> d <span class="token operator">=</span> c<span class="token operator"> +</span><span class="token number"> 1</span><span class="token punctuation">;</span></span><span class="token punctuation"></span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+                            </td>
+                            <td>
+                                <pre class="line-numbers block-inline language-java" data-line="" data-start=""
+                                    style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span><code class="language-java ps"><span class="token keyword"></span><span class="text-red"><span class="token keyword">int</span> c<span class="token punctuation">;</span>
+c <span class="token operator">=</span> <span class="token number">7</span><span class="token punctuation">;</span></span><span class="token punctuation"></span>
+<span class="token keyword"></span><span class="text-viola"><span class="token keyword">int</span> d<span class="token punctuation">;</span>
+d <span class="token operator">=</span> c<span class="token operator"> +</span><span class="token number"> 1</span><span class="token punctuation">;</span></span><span class="token punctuation"></span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <pre class="line-numbers block-inline language-java" data-line="" data-start=""
+                                    style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span></span><code class="language-java ps"><span class="text-user">String s <span class="token operator">=</span> <span class="token string">"I’m Amigo"</span><span class="token punctuation">;</span></span><span class="token punctuation"></span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+                            </td>
+                            <td>
+                                <pre class="line-numbers block-inline language-java" data-line="" data-start=""
+                                    style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span><code class="language-java ps"><span class="text-user">String s<span class="token punctuation">;</span>
+s <span class="token operator">=</span> <span class="token string">"I’m Amigo"</span><span class="token punctuation">;</span></span><span class="token punctuation"></span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><span class="text-user">— Так гораздо компактнее и понятнее.</span></p>
+            <p>— На том и стоим.</p>
+            <p>— Есть два типа, с которыми обязательно нужно познакомиться новичку в языке Java. Это типы <span
+                    class="text-green">int (целые числа)</span> и <span class="text-yellow">String (текст/строки)</span>.</p>
+            <p>— Тип <strong>int</strong> позволяет хранить в переменной числа, а также выполнять над ними различные операции:
+                сложение, вычитание, умножение, деление и другие.</p>
+            <div class="table-container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th width="20px"></th>
+                            <th>Код</th>
+                            <th>Пояснение</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <pre class="line-numbers block-inline language-java" data-line="" data-start=""
+                                    style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span><code class="language-java ps"><span class="token keyword">int</span> <mark>x</mark> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> <mark class="user">y</mark> <span class="token operator">=</span> <mark>x</mark><span class="token operator">*</span><span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> <mark class="green">z</mark> <span class="token operator">=</span> <span class="token number">5</span><span class="token operator">*</span><mark class="user">y</mark><span class="token operator">*</span><mark class="user">y</mark> <span class="token operator">+</span> <span class="token number">2</span><span class="token operator">*</span><mark class="user">y</mark> <span class="token operator">+</span> <span class="token number">3</span><span class="token punctuation">;</span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+                            </td>
+                            <td><mark>x</mark> будет равен 1<br>
+                                <mark class="user">y</mark> будет равен 2<br>
+                                <mark class="green">z</mark> будет равен 20+4+3, будет равен 27</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <pre class="line-numbers block-inline language-java" data-line="" data-start=""
+                                    style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span><code class="language-java ps"><span class="token keyword">int</span> <mark class="user">a</mark> <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> <mark class="green">b</mark> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> <mark class="viola">c</mark> <span class="token operator">=</span> <span class="token punctuation">(</span><mark class="user">a</mark><span class="token operator">-</span><mark class="green">b</mark><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span><mark class="user">a</mark><span class="token operator">+</span><mark class="green">b</mark><span class="token punctuation">)</span><span class="token punctuation">;</span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+                            </td>
+                            <td><mark class="user">a</mark> будет равно 5<br>
+                                <mark class="green">b</mark> будет равно 1<br>
+                                <mark class="viola">c</mark> будет равно 4*6, будет равно 24</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <pre class="line-numbers block-inline language-java" data-line="" data-start=""
+                                    style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span><code class="language-java ps"><span class="token keyword">int</span> <mark class="user">a</mark> <span class="token operator">=</span> <span class="token number">64</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> <mark class="red">b</mark> <span class="token operator">=</span> <mark class="user">a</mark><span class="token operator">/</span><span class="token number">8</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> <mark class="viola">c</mark> <span class="token operator">=</span> <mark class="red">b</mark><span class="token operator">/</span><span class="token number">4</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> <mark>d</mark> <span class="token operator">=</span> <mark class="viola">c</mark><span class="token operator">*</span><span class="token number">3</span><span class="token punctuation">;</span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+                            </td>
+                            <td><mark class="user">a</mark> будет равно 64<br>
+                                <mark class="red">b</mark> будет равно 8<br>
+                                <mark class="viola">c</mark> будет равно 2<br>
+                                <mark>d</mark> будет равно 6</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><span class="text-user">— А мне все понятно. Все программирование такое легкое?</span></p>
+            <p>— Вообще-то да.</p>
+            <p><span class="text-user">— Это хорошо. Так что там у тебя дальше?</span></p>
+            <p>— Тип <strong>String</strong> позволяет хранить текстовые строки.</p>
+            <p>— Чтобы задать какую-то текстовую строку, в Java надо написать текст строки, а с обеих сторон написать двойные
+                кавычки. Пример:</p>
+            <div _ngcontent-jr-site-c178="" class="table-container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th width="20px"></th>
+                            <th>Код</th>
+                            <th>Пояснение</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <pre class="line-numbers block-inline language-java" data-line="" data-start=""
+                                    style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span></span><code class="language-java ps">String <span class="text-user">s</span> <span class="token operator">=</span> <span class="token string"><span class="text-green">"Amigo"</span></span><span class="token punctuation">;</span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+                            </td>
+                            <td><code class=" language-undefined"><span class="text-user">s</span></code> будет содержать текст
+                                <code class=" language-undefined"><span class="text-green">«Amigo»</span></code>.</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <pre class="line-numbers block-inline language-java" data-line="" data-start=""
+                                    style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span></span><code class="language-java ps">String <span class="text-user">s</span> <span class="token operator">=</span> <span class="token string"><span class="text-green">"123"</span></span><span class="token punctuation">;</span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+                            </td>
+                            <td><code class=" language-undefined"><span class="text-user">s</span></code> будет содержать текст
+                                <code class=" language-undefined"><span class="text-green">«123»</span></code>.</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <pre class="line-numbers block-inline language-java" data-line="" data-start=""
+                                    style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span></span><code class="language-java ps">String <span class="text-user">s</span> <span class="token operator">=</span> <span class="token string"><span class="text-green">"123 + 456"</span></span><span class="token punctuation">;</span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+                            </td>
+                            <td><code class=" language-undefined"><span class="text-user">s</span></code> будет содержать текст
+                                <code class=" language-undefined"><span class="text-green">«123 + 456»</span></code>.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><span class="text-user">— Я понял. Выглядит не сложно.</span></p>
+            <p>— Тогда вот тебе еще интересный факт.</p>
+            <p>— Строки можно склеивать с помощью знака плюс – «+». Пример:</p>
+            <div class="table-container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th width="20px"></th>
+                            <th>Код</th>
+                            <th>Пояснение</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <pre class="line-numbers block-inline language-java"
+                                    style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span></span><code class="language-java ps">String <span class="text-user">s</span> <span class="token operator">=</span> <span class="token string"><span class="text-green">"Amigo"</span></span> <span class="token operator">+</span> <span class="token string"><span class="text-green">" is the best"</span></span><span class="token punctuation">;</span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+                            </td>
+                            <td><code class=" language-undefined"><span class="text-user">s</span></code> будет содержать текст
+                                <code class=" language-undefined"><span class="text-green">«Amigo is the best»</span></code>.</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <pre class="line-numbers block-inline language-java"
+                                    style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span></span><code class="language-java ps">String <span class="text-user">s</span> <span class="token operator">=</span> <span class="token string"><span class="text-green">""</span></span><span class="token punctuation">;</span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+                            </td>
+                            <td><code class=" language-undefined"><span class="text-user">s</span></code> будет содержать пустую
+                                строку – строку вообще без символов.</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <pre class="line-numbers block-inline language-java" data-line="" data-start=""
+                                    style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span><code class="language-java ps"><span class="token keyword">int</span> <span class="text-viola">x</span> <span class="token operator">=</span> <span class="token number">333</span><span class="token punctuation">;</span>
+String <span class="text-user">s</span> <span class="token operator">=</span> <span class="token string"><span class="text-green">"Amigo"</span></span> <span class="token operator">+</span> <span class="text-viola">x</span><span class="token punctuation">;</span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+                            </td>
+                            <td><code class=" language-undefined"><span class="text-user">s</span></code> будет содержать <code
+                                    class=" language-undefined"><span class="text-green">«Amigo333»</span></code>.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><span class="text-user">— Так можно еще и складывать строки и числа?</span></p>
+            <p>— Да, но учти, что <span class="text-yellow">при сложении строк и чисел, всегда получается строка.</span></p>
+            <p><span class="text-user">— Да я уже догадался по примеру.</span></p>
+            <p>— Ну, раз ты у нас такой догадливый, то догадайся, как вывести переменную на экран?</p>
+            <p><span class="text-user">— Э-э-э. Переменную? на экран? Что-то ничего в голову не приходит.</span></p>
+            <p>— Тут на самом деле все просто. Чтобы вывести что-то на экран мы используем команду <code
+                    class=" language-undefined"><span class="text-red">System.out.println()</span></code>, куда в качестве параметра
+                и передаем то, что мы выводим.</p>
+            <div class="table-container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th width="20px"></th>
+                            <th>Код</th>
+                            <th>Вывод на экран</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <pre class="line-numbers block-inline language-java" data-line="" data-start=""
+                                    style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span></span><code class="language-java ps">System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function"><strong>println</strong></span><span class="token punctuation">(</span><span class="token string">"Amigo"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+                            </td>
+                            <td>Amigo</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <pre class="line-numbers block-inline language-java" data-line="" data-start=""
+                                    style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span></span><code class="language-java ps">System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function"><strong>println</strong></span><span class="token punctuation">(</span><span class="token string">"Ami"</span><span class="token operator">+</span><span class="token string">"go"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+                            </td>
+                            <td>Amigo</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <pre class="line-numbers block-inline language-java" data-line="" data-start=""
+                                    style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span><code class="language-java ps">String <span class="text-red">s</span> <span class="token operator">=</span> <span class="token string">"Amigo"</span><span class="token punctuation">;</span>
+System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function"><strong>println</strong></span><span class="token punctuation">(</span><span class="text-red">s</span><span class="token punctuation">)</span><span class="token punctuation">;</span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+                            </td>
+                            <td>Amigo</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>
+                                <pre class="line-numbers block-inline language-java" data-line="" data-start=""
+                                    style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span><code class="language-java ps">String <span class="text-red">s</span> <span class="token operator">=</span> <span class="token string">"Am"</span><span class="token punctuation">;</span>
+System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function"><strong>println</strong></span><span class="token punctuation">(</span><span class="text-red">s</span><span class="token operator">+</span><span class="token string">"igo"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+                            </td>
+                            <td>Amigo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><span class="text-user">— Ага! Теперь все стало гораздо понятнее.</span></p>
+            <p>— Вот и отлично. Тогда тебе еще три задания.</p>
+
+
+
+
+            <p class="requirement">Комплимент учителю:</p>
+            <p>
+                В 3126 году все знают команду System.out.println() и пользуются ею очень часто. 
+                Не только студенты секретного центра JavaRush, даже дети начинают учить программирование именно с этой команды. 
+                Давайте напишем программу, в которой будет выведен истинный год рождения моего друга, родившегося 8 лет назад.<br>
+                <strong>Сейчас 3126 год. Мой друг родился 8 лет назад.
+                Написать программу, выводящую на экран год рождения моего друга.</strong>
+            </p>
+            <p class="requirement">Мой юный друг:</p>
+            <p>
+                В секретном центре JavaRush все учителя классные! Студенты отмечают это с самого нулевого уровня, но вслух говорят редко. 
+                А доброе слово и кошке приятно, не так ли? Лучшим комплиментом тому, кто учит программированию, будет программа. 
+                А если программа ещё и правильную фразу выведет, цены ей не будет! Пишем программу с комплиментом.<br>
+                <strong>Написать программу, выводящую на экран надпись "Элли самая красивая" 5 раз. Каждый раз - с новой строки.
+                Пример вывода на экран:</strong>
+                <code class="task-content">
+                        <span>Элли самая красивая<br>
+                            Элли самая красивая<br>
+                            Элли самая красивая<br>
+                            Элли самая красивая<br>
+                            Элли самая красивая</span>
+                    </code>
+            </p>
+            <p class="requirement">Объявляем переменные:</p>
+            <p>
+                В Java нельзя просто так взять — и использовать переменную! Вас не поймут (компиляторы не поймут, ругаться будут, вот увидите!). 
+                Так что если уж вы решились что-то делать с переменной, об этом намерении нужно объявить во всеуслышание! 
+                Пишем программу, которая объявляет переменные типов int и String.<br>
+                <strong>Напиши программу, которая в методе main объявляет такие переменные:
+                    name типа String, age типа int и city типа String.
+                    
+                    Примечание: "объявить переменную" - значит то же, что и "создать переменную".</strong>
+            </p>
+        </article>
+    </main>
+
+    <footer>
+        <a href="3.html">Предыдущая лекция</a>
+        <a href="5.html">Следующая лекция</a>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

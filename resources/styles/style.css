@@ -53,9 +53,11 @@ footer a:hover {
 .risha {
     background-image: url(../img/avatars/risha.png);
 }
-
 .zapp {
     background-image: url(../img/avatars/zapp.png);
+}
+.elly {
+    background-image: url(../img/avatars/elly.png);
 }
 
 .avatar_image {
