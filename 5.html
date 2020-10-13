@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Second Page</title>
+    <link rel="shortcut icon" type="image/x-icon" href="resources/img/icon/favicon.ico">
+    <link href="resources/styles/style.css" rel="stylesheet" type="text/css">
+    <link href="resources/styles/codeStyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+        <article>
+            <header id="headerContainer" class="flexContainer">
+                <figure id="avatar" class="avatar">
+                    <div role="img" class="avatar_image professor"></div>
+                </figure>
+                <div id="headerInnerContainer" class="flexContainerColumn">
+                    <h1 class="article-head_title">Кто такие компиляторы?</h1>
+                    <p>Java Syntax</p>
+                    <p>0 уровень, 5 лекция</p>
+                    <p id="teachers_name">Профессор Нудлс</p>
+                </div>
+            </header>
+            <div class="row">
+                <div class="col"><img data-id="defcbb36-f12c-4ce1-ba02-aed61b687bf2" data-max-width="800"
+                        alt="Кто такие компиляторы? - 1"
+                        src="resources/img/lesson5/areYouReadyToLearnJava.png"
+                        style="width: 800px;"></div>
+            </div>
+            <p>— Привет, Амиго. Меня зовут профессор Ханс Нудлс. Я – глава Ученого совета «Galactic Rush», а также
+                курирую проект по обучению тебя программированию на Java.</p>
+            <p><span class="text-user">— День добрый, профессор Нудлс.</span></p>
+            <p>— Я хочу рассказать тебе, почему <strong>Java – это очень крутой язык программирования.</strong></p>
+            <p>— Ты не раз еще услышишь, что неоспоримое преимущество Java над другими языками – это
+                <strong>мультиплатформенность</strong>. Что же это такое и с чем его едят? Но начну немного издалека.
+            </p>
+            <p><strong>— Дело в том, что компьютер умеет исполнять только простейшие числовые команды.</strong> Для
+                собак есть команды «Рядом», «Лапу» и другие, слыша которую собака что-то делает важное.</p>
+            <p>У компьютера роль таких команд выполняют числа: каждая команда закодирована некоторым числом – кодом (их
+                еще называют машинным кодом).</p>
+            <p>— Писать программу в виде чисел очень сложно, поэтому люди придумали <span class="text-green">языки
+                    программирования</span> и <span class="text-red">компиляторы</span>. <span class="text-green">Такой
+                    язык</span> с одной стороны понятен человеку, с другой – компилятору. <span
+                    class="text-red">Компилятор</span> – это специальная программа, которая переводит текст программы,
+                написанный на языке программирования, в набор машинных кодов.</p>
+            <p>— Обычно программист пишет программу на языке программирования, а затем запускает компилятор, который на
+                основе написанных программистом файлов с кодом программы делает один файл с машинным кодом –
+                окончательную (скомпилированную) программу.</p>
+            <div class="lecture-diagram-stages">
+                <ul class="lecture-diagram-stages__list">
+                    <li class="lecture-diagram-stages__item lecture-diagram-stages__item--orange">Программа&nbsp;на
+                        языке&nbsp;C++</li>
+                    <li class="lecture-diagram-stages__item lecture-diagram-stages__item--transition">
+                        <div class="lecture-diagram-stages__arrow">Компилятор</div>
+                    </li>
+                    <li class="lecture-diagram-stages__item lecture-diagram-stages__item--blue">Программа состоящая из
+                        машинных&nbsp;кодов</li>
+                </ul>
+            </div>
+            <p>— Получившаяся в итоге программа сразу может выполняться на компьютере. Минусом такого подхода есть то,
+                что код полученной программы сильно зависит от процессора и операционной системы. Программа,
+                скомпилированная под Windows, не будет работать на телефоне с Android.</p>
+            <p><span class="text-user">— Т.е если я написал программу и скомпилировал ее для Android, то она не будет
+                    работать, если я попробую запустить ее под Windows?</span></p>
+            <p>— Да.</p>
+            <p>— <span class="text-user">Ясно</span></p>
+            <p>— Но у Java гораздо более инновационный подход.</p>
+            <div class="lecture-diagram-stages">
+                <ul class="lecture-diagram-stages__list">
+                    <li class="lecture-diagram-stages__item lecture-diagram-stages__item--orange">Программа&nbsp;на
+                        языке&nbsp;Java</li>
+                    <li class="lecture-diagram-stages__item lecture-diagram-stages__item--transition">
+                        <div class="lecture-diagram-stages__arrow">Java‑компилятор</div>
+                    </li>
+                    <li class="lecture-diagram-stages__item lecture-diagram-stages__item--green">Программа
+                        состоящая&nbsp;из специально независимых кодов (байт‑код)</li>
+                    <li class="lecture-diagram-stages__item lecture-diagram-stages__item--transition">
+                        <div class="lecture-diagram-stages__arrow">Java&nbsp;VM</div>
+                    </li>
+                    <li class="lecture-diagram-stages__item lecture-diagram-stages__item--blue">Программа состоящая из
+                        машинных&nbsp;кодов</li>
+                </ul>
+            </div>
+            <p>— Компилятор Java не компилирует все классы в одну программу из машинных кодов. Вместо этого он
+                компилирует каждый класс по отдельности и не в машинные коды, а в специальный промежуточный код
+                (байт-код). Компиляция в машинный код выполняется при запуске программы.</p>
+            <p><span class="text-user">— А кто же компилирует программу в машинный код при ее запуске?</span></p>
+            <p>— Есть специальная программа под названием JVM (Java Virtual Machine) – Виртуальная Машина Java. Именно
+                ее запускают первой, когда нужно запустить программу, состоящую из байт-кода. А уже JVM перед
+                выполнением нужной программы компилирует ту в машинный код.</p>
+            <p><span class="text-user">— Как интересно. А зачем понадобилось так делать?</span></p>
+            <p><strong>— Это очень мощный ход. И одна из причин тотального доминирования Java.</strong></p>
+            <p>— Благодаря такому подходу программы, написанные на Java, могут выполняться практически на любом
+                устройстве – компьютеры, телефоны, банкоматы, тостеры, банковские карточки(!).</p>
+            <p><span class="text-user">— Круто!</span></p>
+            <p>— Преимуществ такого подхода очень много. Именно поэтому все программы на Android тоже пишутся на Java. А
+                благодаря развитию мобильного сектора, Java занимает доминирующее положение в следующих отраслях
+                программирования:</p>
+            <p>1) <mark>Enterprise</mark>: тяжелые серверные приложения для банков, корпораций, инвестфондов и т.д.</p>
+            <p>2) <mark>Mobile</mark>: мобильная разработка (телефоны, планшеты), благодаря Android.</p>
+            <p>3) <mark>Web</mark>: лидирует PHP, но и Java держит солидный кусок рынка.</p>
+            <p>4) <mark>Big Data</mark>: распределенные вычисления в кластерах из тысяч серверов.</p>
+            <p>5) <mark>Smart Devices</mark>: программы для умного дома, электроники, холодильников с выходом в
+                интернет.</p>
+            <p>— Java – это не просто язык, это целая экосистема: миллионы готовых модулей, которые ты можешь
+                использовать в своей программе. Тысячи сообществ и форумов в интернете, где можно попросить помощи или
+                совета.</p>
+            <p>— Чем больше ты будешь программировать на Java, тем больше будешь находить ответов на вопрос</p>
+            <p>— «Почему именно Java?». На этом на сегодня все.</p>
+            <p><span class="text-user">— Спасибо, профессор. Очень интересная и вдохновляющая лекция.</span></p>
+        </article>
+    </main>
+
+    <footer>
+        <a href="4.html">Предыдущая лекция</a>
+        <a href="6.html">Следующая лекция</a>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

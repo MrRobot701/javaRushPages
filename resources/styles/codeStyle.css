@@ -40,12 +40,12 @@ code {
     line-height: 1.7em;
 }
 
-.line-numbers-rows > span {
+.line-numbers-rows>span {
     counter-increment: linenumber;
     display: block;
 }
 
-.line-numbers-rows > span:before {
+.line-numbers-rows>span:before {
     content: counter(linenumber);
     color: #55565a;
 }
@@ -71,7 +71,7 @@ code {
 .bl {
     display: inline-block;
     background-color: transparent;
-    border: 1px dashed  #f80;
+    border: 1px dashed #f80;
     text-transform: uppercase;
     margin-left: 1.7em;
     padding: 0 2em;
@@ -100,7 +100,8 @@ pre.inline-block {
     justify-content: center;
 }
 
-.variable, .method {
+.variable,
+.method {
     margin-bottom: 1em;
 }
 
@@ -115,23 +116,29 @@ pre.inline-block {
 table {
     border-collapse: collapse;
 }
+
 table:not([width]) {
     width: 100%;
 }
-table td, table th {
-    border: 1px solid rgba(162,126,174,.75);
-}
+
+table td,
 table th {
-    color: rgba(0,0,0,.9);
+    border: 1px solid rgba(162, 126, 174, .75);
+}
+
+table th {
+    color: rgba(0, 0, 0, .9);
     background-color: #fcf0ff;
     padding: .8em .85em .75em;
     line-height: normal;
     text-align: inherit;
 }
+
 table td {
     padding: .8em .85em;
     vertical-align: baseline;
 }
+
 table td:not([width]) {
     min-width: 5ch;
 }
@@ -145,6 +152,7 @@ table td:not([width]) {
     border-color: #faa033;
     border-radius: 0.2em;
 }
+
 .requirement {
     font-weight: bold;
     color: rgb(23, 43, 83);
@@ -153,8 +161,9 @@ table td:not([width]) {
 mark {
     color: #fff;
     background-color: #faa033;
-    padding: 0 .2em;
     border-radius: .1em;
+    padding: .1em .3em;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.2);
 }
 mark.red {
     background-color: #ff6c60;
@@ -167,4 +176,130 @@ mark.viola {
 }
 mark.user {
     background-color: #3a5fa5;
+}
+.viola .keyword {
+    color: #fff;
+}
+.red .keyword {
+    color: #fff;
+}
+.comment {
+    color: gray;
+}
+
+.lecture-diagram-stages {
+    color: #151f33;
+    box-sizing: border-box;
+    overflow: auto;
+    max-width: 100%;
+    font-family: Menlo, Monaco, Consolas, Courier New, Ubuntu Mono, monospace;
+    margin: auto;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.lecture-diagram-stages__list {
+    text-align: left;
+    overflow-wrap: break-word;
+    line-height: 1.7;
+    color: #151f33;
+    box-sizing: border-box;
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.lecture-diagram-stages__item {
+    overflow-wrap: break-word;
+    list-style: none;
+    box-sizing: border-box;
+    display: flex;
+    min-height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em 1.25em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    line-height: 1.6;
+    font-weight: 600;
+    letter-spacing: .5px;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 3px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-basis: 17%;
+    font-size: .85em;
+    width: auto;
+    color: rgba(23, 43, 83, .9);
+    border-color: #f80;
+}
+
+.lecture-diagram-stages__item--transition {
+    overflow-wrap: break-word;
+    list-style: none;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-weight: 600;
+    letter-spacing: .5px;
+    text-align: center;
+    border-radius: 3px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    font-size: .85em;
+    width: auto;
+    flex-basis: 17%;
+    min-height: 0;
+    line-height: 1.5;
+    border: 0;
+    transition: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: .5em .95em .5em 1.1em;
+    color: #871dc1;
+    text-shadow: 1px 1px 0 hsla(0, 0%, 100%, .5);
+}
+
+.lecture-diagram-stages__arrow {
+    font-size: .85em;
+    box-sizing: border-box;
+    position: relative;
+    min-width: 80px;
+    padding: 1em 1.8em 1em .875em;
+}
+.lecture-diagram-stages__arrow::before {
+    content: "";
+    background: #e8d4f3;
+    right: 1.7em;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+}
+.lecture-diagram-stages__arrow::after {
+    content: "";
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 60' preserveAspectRatio='none'%3E%3Cpolygon fill='%23e8d4f3' points='30 30 0 60 1.12221545e-14 0'/%3E%3C/svg%3E");
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 1.7em;
 }

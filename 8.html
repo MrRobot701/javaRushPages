@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Second Page</title>
+    <link rel="shortcut icon" type="image/x-icon" href="resources/img/icon/favicon.ico">
+    <link href="resources/styles/style.css" rel="stylesheet" type="text/css">
+    <link href="resources/styles/codeStyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+        <article>
+            <header id="headerContainer" class="flexContainer">
+                <figure id="avatar" class="avatar">
+                    <div role="img" class="avatar_image diego"></div>
+                </figure>
+                <div id="headerInnerContainer" class="flexContainerColumn">
+                    <h1 class="article-head_title">Итог нулевого уровня</h1>
+                    <p>Java Syntax</p>
+                    <p>0 уровень, 8 лекция</p>
+                    <p id="teachers_name">Диего</p>
+                </div>
+            </header>
+            <div class="row">
+                <div class="col"><img alt="Итог нулевого уровня - 1" src="resources/img/lesson8/diegoAndACup.png">
+                </div>
+            </div>
+            <p>— Привет, я – Диего. Такой же робот, как и ты, но произведен на фабрике в Гаване, на Кубе.</p>
+            <p><span class="text-user">— Здорово, Диего!</span></p>
+            <p>— И как тебе урок?</p>
+            <p><span class="text-user">— Это самый крутой урок программирования, который у меня был. Нет. Еще круче.
+                    Лучший урок в моей жизни. Даже круче, чем я мог себе представить.</span></p>
+            <p>— На том и стоим.</p>
+            <p><span class="text-user">— И что, все уроки такие интересные?</span></p>
+            <p>— А то! Еще круче. Скучные уроки остались в 21 веке. Это ж надо – писать мелом на доске. С 15 века ничего
+                не изменилось. Там, небось, по улицам еще динозавры ходили.</p>
+            <p><span class="text-user">— Я тоже так думаю. И что же дальше?</span></p>
+            <p>— Ты переходишь на следующий уровень! Осталось еще 39. И потом можно искать работу!</p>
+            <p><strong>Сегодня ты узнал:</strong></p>
+            <ul>
+                <li>Что такое переменные</li>
+                <li>Как выводить сообщения на экран</li>
+                <li>Познакомился с типами int и String</li>
+                <li>Чем компиляция в Java отличается от других языков</li>
+                <li>Как делать комментарии и зачем они нужны</li>
+            </ul>
+            <p><span class="text-user">— Отлично!</span></p>
+            <p>— Конечно, следующие уровни не будут такими легкими, как и этот, но их сложность будет расти постепенно.
+                Так же как и сложность практических задач.</p>
+            <p>— Прямо как в спортзале – потихоньку поднимаем нагрузку, и новичок через полгода жмет с груди
+                стокилограммовую штангу.</p>
+            <p><span class="text-user">— Круто. Уже хочу. И штангу, и работу!</span></p>
+            <p>— Ну, раз ты такой настойчивый, вот тебе еще парочка задач. С колоритом Дона Диего :)</p>
+
+
+
+            <p class="requirement">Баги и фичи:</p>
+            <p>
+                Когда-нибудь вы станете настоящим программистом, и у вас будет (почти собственный!) тестировщик.
+                Конечно, до этого еще очень далеко, но учиться никогда не рано: прямо сейчас запомним полезную фразу,
+                которая пригодится в разговоре с тестировщиком! Берем команду вывода на экран и старательно выводим:
+                «Это не баг, это фича».<br>
+                <strong>Напиши программу, которая выводит на экран надпись:</strong>
+                <code class="task-content">
+                        <span>Это не баг, это фича.</span>
+                    </code>
+            </p>
+            <p class="requirement">Комментарии излишни:</p>
+            <p>
+                Не все комментарии одинаково полезны! Иногда они появляются в коде, если программист не уверен в
+                какой-то
+                строчке и хочет вернуться к ней позднее. Так и с этой задачей получилось: в ней один лишний комментарий,
+                отчего программа делает не то, что нужно. Раскомментируйте одну строку, чтобы получить правильный
+                результат!<br>
+                <strong>Раскомментируй одну строчку, чтобы программа вывела на экран числа 12 и 2 (сначала 12, а затем 2).</strong>
+            <pre>
+<code class="task-content">
+    public class Solution 
+    {
+        public static void main(String[] args) 
+        {
+            int x = 2;
+            int y = 12;
+    
+            // y = x * y;
+            // y = x + y;
+    
+            x = y - x;
+            y = y - x;
+    
+            System.out.println(x);
+            System.out.println(y);
+        }
+    }
+</code>
+            </pre>
+            </p>
+            <p class="requirement">2 + 3 = 5:</p>
+            <p>
+                То, что 2 + 3 = 5, это же очевидно? Как оказалось, не всегда и не всем: нашей тестовой программе это непонятно, 
+                потому что какой-то очень умный программист добавил в неё лишние строки. Восстановите равновесие: закомментируйте 
+                какие-то из строк так, чтобы на экран вывелась фраза «2 плюс 3 равно 5».<br>
+                <strong>Закомментируй ненужные строки кода, чтобы на экран вывелась надпись:</strong>
+                <code class="task-content">
+                    <span>2 плюс 3 равно 5</span>
+                </code>
+                <strong>Примечание:</strong> комментировать строки с объявлением переменных int a и int b нельзя.
+                <pre>
+<code class ="task-content">
+    public class Solution {
+        public static void main(String[] args) {
+            int a = 3;
+            int b = 2;
+    
+            System.out.print("два");
+            System.out.print(b);
+            System.out.print(" плюс ");
+            System.out.print(" минус ");
+            System.out.print(a);
+            System.out.print("три");
+            System.out.print(" равно ");
+            System.out.print(" будет ");
+            System.out.print("пять");
+            System.out.print(a + b);
+        }
+    }
+</code>
+                </pre>
+            </p>
+        </article>
+    </main>
+
+    <footer>
+        <a href="7.html">Предыдущая лекция</a>
+        <a href="9.html">Следующая лекция</a>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

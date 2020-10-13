@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Second Page</title>
+    <link rel="shortcut icon" type="image/x-icon" href="resources/img/icon/favicon.ico">
+    <link href="resources/styles/style.css" rel="stylesheet" type="text/css">
+    <link href="resources/styles/codeStyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+        <article>
+            <header id="headerContainer" class="flexContainer">
+                <figure id="avatar" class="avatar">
+                    <div role="img" class="avatar_image kim"></div>
+                </figure>
+                <div id="headerInnerContainer" class="flexContainerColumn">
+                    <h1 class="article-head_title">Знакомство с Ким</h1>
+                    <p>Java Syntax</p>
+                    <p>0 уровень, 6 лекция</p>
+                    <p id="teachers_name">Ким</p>
+                </div>
+            </header>
+            <div class="row">
+                <div class="col">
+                    <img alt="Знакомство с Ким - 1" src="resources/img/lesson6/kim.png">
+                </div>
+            </div>
+            <p>Ого, еще одна человеческая женщина. Но на этот раз с черными волосами. Как интересно.</p>
+            <p>— Привет, меня зовут Ким.</p>
+            <p><span class="text-user">— Привет, а меня – Амиго!</span></p>
+            <p>— Да, я знаю. Это же я придумала тебе имя. Диего бы сам до такого не додумался.</p>
+            <p>Мысли Амиго опять понеслись со скоростью электронов. М-мм… Какая симпатичная… Интересно, ей нравятся
+                роботы?</p>
+            <p>— Вернемся к лекции! Давай я тебе просто словами объясню весь материал.</p>
+            <p><span class="text-user">— Ок.</span></p>
+            <p>— Хочу добавить пару слов к сказанному профессором и Ришей.</p>
+            <p>— В языке Java ты можешь писать не только команды, но и комментарии к ним прямо в коде. Такие комментарии
+                игнорируются компилятором, будто и нет их вовсе. <span class="text-red">При исполнении программы все
+                    комментарии пропускаются!</span></p>
+            <p><span class="text-user">— А можно пример?</span></p>
+            <p>— Да, конечно:</p>
+            <pre class="line-numbers  language-java" data-line="" data-start=""
+                style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span><code class="language-java ps"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Home</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> main <span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token comment">/*
+        Сейчас мы выведем на экран фразу 'Amigo Is The Best'
+        */</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Amigo "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Is "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"The "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Best"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code>
+            </pre>
+            <p>— В коде класса мы написали комментарий «Сейчас мы выведем на экран фразу …». Начало комментария
+                обозначается парой символов «/*», а конец – «*/». <span class="text-red">Когда программа будет
+                    компилироваться, компилятор пропустит все, что находится между символами /* и */</span></p>
+            <p><span class="text-user">— Т.е. я могу написать там что угодно?</span></p>
+            <p>— Да. Обычно в коде пишут различные комментарии к его неочевидным или сложным для понимания частям.
+                Бывают комментарии на десятки строк, такие обычно пишут перед методами, в которых описывают нюансы
+                работы методов.</p>
+            <p>— Есть еще один способ задать комментарий в коде – с помощью символов «//».</p>
+            <pre class="line-numbers  language-java" data-line="" data-start=""
+                style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span><code class="language-java ps"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Home</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> main <span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Amigo "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"The "</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//вот тут еще один комментарий</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Best"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code>
+            </pre>
+            <p>— При этом <span class="text-red">комментарием считается часть кода, начиная с пары символов // и до
+                    конца строки</span>, где они расположены. Т.е. второй пары символов, которые «закрывают комментарий»
+                нет.</p>
+            <p>Иногда, кстати, в коде попадаются очень интересные комментарии:</p>
+            <pre class="line-numbers  language-java" data-line="" data-start=""
+                style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span></span><code class="language-java ps"><span class="token comment">// Я не отвечаю за этот код. Меня заставили написать его против моего желания.</span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+            <pre class="line-numbers  language-java" data-line="" data-start=""
+                style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span></span><code class="language-java ps"><span class="token comment">// Дорогой я_из_будущего! Пожалуйста, прости меня за этот код.</span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+            <pre class="line-numbers  language-java" data-line="" data-start=""
+                style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span></span><code class="language-java ps"><span class="token comment">// Если я еще раз увижу такое, мне придется начать носить на работу оружие.</span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+            <pre class="line-numbers  language-java" data-line="" data-start=""
+                style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span><code class="language-java ps"><span class="token comment">// Если это условие когда-нибудь выполнится, пожалуйста,</span>
+<span class="token comment">// сообщите мне по тел. ххх-ххх-ххх за вознаграждение.</span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+            <pre class="line-numbers  language-java" data-line="" data-start=""
+                style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span><code class="language-java ps"><span class="token comment">// Дорогой программист:</span>
+<span class="token comment">// Когда ты закончишь «оптимизировать» эту подпрограмму</span>
+<span class="token comment">// и поймешь, насколько большой ошибкой было делать это,</span>
+<span class="token comment">// пожалуйста, увеличь счетчик внизу как предупреждение</span>
+<span class="token comment">// для следующего парня:</span>
+<span class="token comment">// количество_часов_потраченных_здесь = 42</span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+            <pre class="line-numbers  language-java" data-line="" data-start=""
+                style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span><code class="language-java ps"><span class="token comment">// Когда я начинал это писать, только Бог и я понимали, что я делаю</span>
+<span class="token comment">// Сейчас остался только Бог</span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+            <pre class="line-numbers  language-java" data-line="" data-start=""
+                style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span></span><code class="language-java ps"><span class="token comment">// иногда мне кажется, что компилятор игнорирует все мои комментарии</span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+            <pre class="line-numbers  language-java" data-line="" data-start=""
+                style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span><code class="language-java ps"><span class="token comment">// Я посвящаю весь свой код, всю работу своей жене Дарлин, которой</span>
+<span class="token comment">// придётся содержать меня, наших троих детей и собаку, когда</span>
+<span class="token comment">// это пойдет в паблик.</span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+            <pre class="line-numbers  language-java" data-line="" data-start=""
+                style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span></span><code class="language-java ps"><span class="token comment">// пьян, исправить позже</span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+            <pre class="line-numbers  language-java" data-line="" data-start=""
+                style="counter-reset: linenumber 0 NaN 0;"><span aria-hidden="true" class="line-numbers-rows"><span></span></span><code class="language-java ps"><span class="token comment">// Магия. Не трогать.</span><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></code></pre>
+            <p><span class="text-user">— Да, комментарии могут быть очень смешными.</span></p>
+            <p>— У меня – все.</p>
+            <p><span class="text-user">— Какая маленькая, но интересная лекция. Спасибо, Ким.</span></p>
+        </article>
+    </main>
+
+    <footer>
+        <a href="5.html">Предыдущая лекция</a>
+        <a href="7.html">Следующая лекция</a>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
